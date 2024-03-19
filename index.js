@@ -25,7 +25,7 @@ app.use("/", VideoRoutes);
 //SINCRONISMO COM O BANCO DE DADOS
 try {
   database.sync().then(() => {
-    app.listen(9443, () => {
+    app.listen(443, () => {
       console.log("Servidor rodando");
     });
   });
